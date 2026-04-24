@@ -1,0 +1,202 @@
+{
+  "type": "FeatureCollection",
+  "licence": "Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "place_id": 39108407,
+        "osm_type": "relation",
+        "osm_id": 2256536,
+        "place_rank": 22,
+        "category": "natural",
+        "type": "water",
+        "importance": 0.4419798675817451,
+        "addresstype": "water",
+        "name": "Atbarah River",
+        "display_name": "Atbarah River, شندي, نهر النيل, السودان"
+      },
+      "bbox": [
+        33.9713050,
+        15.8484786,
+        35.6106783,
+        17.6868053
+      ],
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          35.0620167,
+          16.767546199999998
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "place_id": 38882700,
+        "osm_type": "relation",
+        "osm_id": 5248309,
+        "place_rank": 18,
+        "category": "waterway",
+        "type": "river",
+        "importance": 0.4419798675817451,
+        "addresstype": "river",
+        "name": "የአትባራ ወንዝ نهر عطبرة",
+        "display_name": "የአትባራ ወንዝ نهر عطبرة, السودان"
+      },
+      "bbox": [
+        33.9692269,
+        12.4863340,
+        37.2316615,
+        17.6855681
+      ],
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          35.8961749,
+          14.854271299999999
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "place_id": 39119710,
+        "osm_type": "relation",
+        "osm_id": 4667777,
+        "place_rank": 16,
+        "category": "boundary",
+        "type": "administrative",
+        "importance": 0.4348618737536934,
+        "addresstype": "city",
+        "name": "عطبرة",
+        "display_name": "عطبرة, نهر النيل, السودان"
+      },
+      "bbox": [
+        33.9127901,
+        16.4308607,
+        35.7097549,
+        17.9031782
+      ],
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          33.98073,
+          17.690719
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "place_id": 38806135,
+        "osm_type": "way",
+        "osm_id": 351671636,
+        "place_rank": 19,
+        "category": "waterway",
+        "type": "river",
+        "importance": 0.14670416800183103,
+        "addresstype": "river",
+        "name": "Atbarah River",
+        "display_name": "Atbarah River, ወዲ ገምዞ, ሰሜን ጎንደር, አማራ ክልል Amhara أمحرة, ኢትዮጵያ"
+      },
+      "bbox": [
+        36.2515943,
+        12.9684690,
+        36.3217878,
+        13.0673760
+      ],
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          36.29417082213321,
+          13.015631881375711
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "place_id": 38859269,
+        "osm_type": "way",
+        "osm_id": 204045085,
+        "place_rank": 19,
+        "category": "waterway",
+        "type": "river",
+        "importance": 0.14667666666666662,
+        "addresstype": "river",
+        "name": "نهر عطبرة\u200e; Nahr 'Atbarah",
+        "display_name": "نهر عطبرة\u200e; Nahr 'Atbarah, ሰሜን ጎንደር, አማራ ክልል Amhara أمحرة, ኢትዮጵያ"
+      },
+      "bbox": [
+        36.3741777,
+        13.0381533,
+        36.4526147,
+        13.0973281
+      ],
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          36.41300543713998,
+          13.062215113651188
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "place_id": 38575475,
+        "osm_type": "way",
+        "osm_id": 204045084,
+        "place_rank": 19,
+        "category": "waterway",
+        "type": "river",
+        "importance": 0.14667666666666662,
+        "addresstype": "river",
+        "name": "Atbarah River",
+        "display_name": "Atbarah River, ሰሜን ጎንደር, አማራ ክልል Amhara أمحرة, ኢትዮጵያ"
+      },
+      "bbox": [
+        36.3214627,
+        13.0557542,
+        36.3781356,
+        13.0696543
+      ],
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          36.348809080298324,
+          13.06517718835696
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "place_id": 38771209,
+        "osm_type": "way",
+        "osm_id": 679561672,
+        "place_rank": 19,
+        "category": "waterway",
+        "type": "river",
+        "importance": 0.14667666666666662,
+        "addresstype": "river",
+        "name": "ጉዋንግ ወንዝ",
+        "display_name": "ጉዋንግ ወንዝ, ሰሜን ጎንደር, አማራ ክልል Amhara أمحرة, ኢትዮጵያ"
+      },
+      "bbox": [
+        36.3247329,
+        12.8948119,
+        36.3277423,
+        12.8985455
+      ],
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          36.32587521357382,
+          12.896451466655657
+        ]
+      }
+    }
+  ]
+}

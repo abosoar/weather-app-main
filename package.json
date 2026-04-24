@@ -1,0 +1,17 @@
+{
+  "name": "weather-app-main",
+  "version": "1.0.0",
+  "description": "![Design preview for the Weather app coding challenge](./preview.jpg)",
+  "license": "ISC",
+  "author": "",
+  "type": "commonjs",
+  "main": "script.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "devDependencies": {
+    "@eslint/js": "^10.0.1",
+    "eslint": "^10.0.0",
+    "globals": "^17.3.0"
+  }
+}

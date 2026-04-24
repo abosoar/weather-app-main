@@ -1,0 +1,183 @@
+
+/* Layout queries */
+/* Small tablet adjustments */
+/* 576px - 767px */
+@media (min-width: 576px) {
+  html {
+    font-size: 50%;
+  }
+  main{
+    grid-template-columns: repeat(2, 1fr);
+  }
+  main .error{
+    grid-column: 1 / -1;
+    grid-row: 1/-1;
+  }
+  .h1-container{
+    grid-column: 1 / -1;
+  }
+  .search {
+    flex-direction: row;
+    grid-column: 1 / -1;
+    justify-self: center;
+    width: 60%;
+  }
+    .search .search-box-wrapper {
+        flex: 4;
+    }
+    .search .btn {
+        flex: 1;
+    }
+    .weather-info {
+        grid-column: 1 / -1;
+    }
+    .now-info{
+        grid-template-columns: repeat(4, 1fr);
+
+    }
+    .now-main-container{
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        
+
+    }
+    .now-main-container .location-date{
+        align-items: start;
+        margin-bottom: 0;
+    }
+    .now-main-container .weather{
+        width: auto;
+        justify-content: end;
+        gap: 1.6rem;
+    }
+    .daily-info-container{
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .hours-list{
+        height: 66rem;
+    }
+}
+/* Tablet adjustments */
+/* 768px - 991px */
+@media (min-width: 768px) {
+  .logo {
+  width: 20rem;
+}
+      main{
+    grid-template-columns: repeat(3, 1fr);
+  }
+        .weather-info {
+        grid-column: 1/3 ;
+        display: flex;
+        flex-direction: column;
+        gap: 2rem;
+    }
+    .now-main{
+        margin-bottom:0;
+    }
+    .now-info{
+        grid-template-columns: repeat(4, 1fr);
+    }
+    .daily-info-container{
+        grid-template-columns: repeat(6, 1fr);
+    }
+    .daily-forecast{
+        grid-column: 1/3;
+        
+    }
+    .hourly-forecast{
+        grid-column: 3;
+        grid-row: 3/5;
+    }
+}
+/* Desktop adjustments */
+/* 992px and above */
+@media (min-width: 992px) {
+    .daily-info-container{
+        grid-template-columns: repeat(7, 1fr);
+    }
+}
+/* Large desktop adjustments */
+/* 1200px and above */
+@media (min-width: 1200px) {
+  /* Nothing */
+}
+
+/* Component queries */
+/* Small tablet adjustments */
+/* 576px - 767px */
+@media (min-width: 576px) {
+  body {
+    padding: 2.4rem;
+  }
+  .header .dropdown-container {
+    width: 27%;
+  }
+
+  .now-main {
+    height: 35rem;
+  }
+  .daily-forecast{
+    margin-bottom: 0;
+  }
+}
+/* Tablet adjustments */
+/* 768px - 991px */
+@media (min-width: 768px) {
+    .header .dropdown-container {
+    width: 20%;
+    }
+
+      .now-main {
+    height: 25rem;
+  }
+  .hourly-forecast .dropdown-container{
+    width: 45%;
+  }
+  .hourly-forecast .hours-list{
+    height: 70rem;
+  }
+}
+/* Desktop adjustments */
+/* 992px and above */
+@media (min-width: 992px) {
+  .hourly-forecast .hours-list{
+    height: 54rem;
+  }
+      .header .dropdown-container {
+    width: 17%;
+    }
+     
+    .hourly-forecast .dropdown-container{
+      width: 32%;
+    }
+}
+/* Large desktop adjustments */
+/* 1200px and above */
+@media (min-width: 1200px) {
+    
+    body{
+      padding: 2.4rem 20rem;
+    }
+    .header .dropdown-container {
+    width: 17%;
+    }
+     
+    .hourly-forecast .dropdown-container{
+      width: 32%;
+    }
+}
+@media (min-width: 1600px) {
+    
+    body{
+        padding: 2.4rem 50rem;
+    }
+        .header .dropdown-container {
+    width: 20%;
+    }
+     
+    .hourly-forecast .dropdown-container{
+      width: 36%;
+    }
+}

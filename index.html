@@ -1,66 +1,244 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
 
   <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
-  
+  <link rel="stylesheet" type="text/css"
+    href="https://cdn.jsdelivr.net/npm/@phosphor-icons/web@2.1.1/src/regular/style.css" />
+  <link rel="stylesheet" type="text/css"
+    href="https://cdn.jsdelivr.net/npm/@phosphor-icons/web@2.1.1/src/fill/style.css" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@phosphor-icons/web@2.1.1/src/bold/style.css" />
+
   <title>Frontend Mentor | Weather app</title>
 
   <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <link rel="stylesheet" href="./css/general.css">
+  <link rel="stylesheet" href="./css/style.css">
+  <link rel="stylesheet" href="./css/queries.css">
   <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
+    .attribution {
+      font-size: 11px;
+      text-align: center;
+    }
+
+    .attribution a {
+      color: hsl(228, 45%, 44%);
+    }
   </style>
 </head>
+
 <body>
+  <header class="header">
+    <img src="./assets/images/logo.svg" alt="" class="logo">
+    <div class="dropdown-container">
+      <div class="dropdown-trigger"><i class="ph ph-gear"></i> Unites <i class="ph ph-caret-down"></i></div>
+      <div class="dropdown hidden">
+        <div class="switch-to dropdown-item">Switch to Imperial</div>
+        <!-- Temperature section -->
+        <div class="dropdown-section dropdown-section-temp">
+          <div class="dropdown-section-title">Temperature</div>
+          <div class="dropdown-item dropdown-item-temp dropdown-item-c selected dropdown-item-metric">
 
-  Units
+            <div class="unit-dropdown-text">
+              Celsius (°C)<div class="tick"><i class="ph-bold ph-check"></i></div>
+            </div>
+          </div>
+          <div class="dropdown-item dropdown-item-temp dropdown-item-f dropdown-item-imperial">
 
-  Switch to Imperial/Metric
+            <div class="unit-dropdown-text">
+              Fahrenheit (°F)<div class="transparent tick"><i class="ph-bold ph-check"></i></div>
+            </div>
+          </div>
+        </div>
+        <!-- wind section -->
+        <div class="dropdown-section dropdown-section-wind">
+          <div class="dropdown-section-title">Wind Speed</div>
+          <div class="dropdown-item selected dropdown-item-wind dropdown-item-kmh dropdown-item-metric">
 
-  Temperature
+            <div class="unit-dropdown-text">
+              km/h<div class="tick"><i class="ph-bold ph-check"></i></div>
+            </div>
+          </div>
+          <div class="dropdown-item dropdown-item-wind dropdown-item-mph dropdown-item-imperial">
 
-  Celsius (°C)
-  Fahrenheit (°F)
+            <div class="unit-dropdown-text">
+              mph<div class="transparent tick"><i class="ph-bold ph-check"></i></div>
+            </div>
+          </div>
+        </div>
+        <!-- Precipitation section -->
+        <div class="dropdown-section dropdown-section-precip">
+          <div class="dropdown-section-title">Precipitation</div>
+          <div class="dropdown-item selected dropdown-item-precip dropdown-item-mm dropdown-item-metric">
 
-  Wind Speed
+            <div class="unit-dropdown-text">
+              Millimeters (mm)<div class="tick"><i class="ph-bold ph-check"></i></div>
+            </div>
 
-  km/h
-  mph
+          </div>
+          <div class="dropdown-item dropdown-item-precip dropdown-item-in dropdown-item-imperial">
 
-  Precipitation
+            <div class="unit-dropdown-text">
+              Inches (in)<div class="transparent tick"><i class="ph-bold ph-check"></i></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
 
-  Millimeters (mm)
-  Inches (in)
+  </header>
+  <main>
+    <div class="h1-container">
+      <h1>How's the sky looking today?</h1>
+    </div>
+    <div class="search">
+      <div class="search-box-wrapper">
+        <input type="search" placeholder="Search for a place...">
+        <i class="ph ph-magnifying-glass"></i>
+        <div class="dropdown-container">
+          <div class="dropdown search-dropdown hidden">
+            <span class="loader hidden"></span>
+          </div>
+        </div>
+      </div>
+      <div class="btn">Search</div>
+    </div>
+    <div class="weather-info">
+      <div class="w-now">
+        <div class="now-main img-wrapper">
+          <img src="./assets/images/bg-today-small.svg" alt="" class="now-bg transparent">
+          <div class="now-main-container">
+               <span class="loader hidden"></span>
+               <div class="location-date hidden">
+                <div class="location"></div>
+                <div class="date"></div>
+               </div>
+               <div class="weather hidden">
+                <img src="" alt="" class="icon">
+                <div class="temp"></div>
+               </div>
+          </div>
+        </div>
+      </div>
+      <div class="now-info">
+        <div class="info-container feels-like-info">
+          <div class="info-name">Feels Like</div>
+          <div class="info-value">__</div>
+        </div>
+        <div class="info-container humidity-info">
+          <div class="info-name">Humidity</div>
+          <div class="info-value">__</div>
+        </div>
+        <div class="info-container wind-speed-info">
+          <div class="info-name">Wind</div>
+          <div class="info-value">__</div>
+        </div>
+        <div class="info-container precipitation-info">
+          <div class="info-name">Precipitation</div>
+          <div class="info-value">__</div>
+        </div>
+      </div>
+    </div>
+    <div class="daily-forecast">
+      <div class="title">Daily forecast</div>
+      <div class="daily-info-container">
+        <div class="forecast-item">
+          <div class="day"></div>
+          <img class="icon"></img>
+          <div class="temps">
+            <div class="h-temp"></div>
+            <div class="l-temp"></div>
+          </div>
+        </div>
+        <div class="forecast-item">
+          <div class="day"></div>
+          <img class="icon"></img>
+          <div class="temps">
+            <div class="h-temp"></div>
+            <div class="l-temp"></div>
+          </div>
+        </div>
+        <div class="forecast-item">
+          <div class="day"></div>
+          <img class="icon"></img>
+          <div class="temps">
+            <div class="h-temp"></div>
+            <div class="l-temp"></div>
+          </div>
+        </div>
+        <div class="forecast-item">
+          <div class="day"></div>
+          <img class="icon"></img>
+          <div class="temps">
+            <div class="h-temp"></div>
+            <div class="l-temp"></div>
+          </div>
+        </div>
+        <div class="forecast-item">
+          <div class="day"></div>
+          <img class="icon"></img>
+          <div class="temps">
+            <div class="h-temp"></div>
+            <div class="l-temp"></div>
+          </div>
+        </div>
+        <div class="forecast-item">
+          <div class="day"></div>
+          <img class="icon"></img>
+          <div class="temps">
+            <div class="h-temp"></div>
+            <div class="l-temp"></div>
+          </div>
+        </div>
+        <div class="forecast-item">
+          <div class="day"></div>
+          <img class="icon"></img>
+          <div class="temps">
+            <div class="h-temp"></div>
+            <div class="l-temp"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="hourly-forecast">
+      <div class="forecast-header">
+        <div class="title">Hourly forecast</div>
+        <!-- <div class="dropdown-trigger">day</div> -->
+        <div class="dropdown-container">
+          <div class="dropdown-trigger">__<i class="ph ph-caret-down"></i></div>
+          <div class="dropdown hourly-dropdown hidden">
+            <div class="dropdown-item">__</div>
+            <div class="dropdown-item">__</div>
+            <div class="dropdown-item">__</div>
+            <div class="dropdown-item">__</div>
+            <div class="dropdown-item">__</div>
+            <div class="dropdown-item">__</div>
+            <div class="dropdown-item">__</div>
+          </div>
+        </div>
+      </div>
+      <div class="hours-list">
+        <template class="hours-info-template">
+          <div class="hour-info-item">
+            <img src="" alt="" class="icon">
+            <div class="hour"></div>
+            <div class="temp"></div>
+          </div>
+        </template>
+      </div>
+    </div>
+  </main>
 
-  How's the sky looking today?
-
-  Search for a city, e.g., New York
-  Search
-
-  Feels like
-  <!-- Insert temperature here -->
-
-  Humidity
-  <!-- Insert humidity here -->
-
-  Wind
-  <!-- Insert wind here -->   
-  
-  Precipitation
-  <!-- Insert precipitation here -->
-
-  Daily forecast
-  <!-- Insert daily forecast for the next 7 days here -->
-
-  Hourly forecast
-  <!-- Insert hourly forecast for the selected day here -->
 
   <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge">Frontend Mentor</a>. 
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge">Frontend Mentor</a>.
     Coded by <a href="#">Your Name Here</a>.
   </div>
+  <script type="module" src="./script.mjs"></script>
 </body>
+
 </html>
