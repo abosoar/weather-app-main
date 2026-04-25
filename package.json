@@ -2,7 +2,7 @@
   "name": "weather-app-main",
   "version": "1.0.0",
   "description": "![Design preview for the Weather app coding challenge](./preview.jpg)",
-  "license": "ISC",
+  "license": "GPL-3.0-only",
   "author": "",
   "type": "commonjs",
   "main": "script.js",
