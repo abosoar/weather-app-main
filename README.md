@@ -53,7 +53,7 @@ Users should be able to:
 ### Links
 
 - Repo URL: [Here](https://github.com/abosoar/weather-app-main)
-- Live Site URL: [Here](https://your-live-site-url.com)
+- Live Site URL: [Here](https://abosoar.github.io/weather-app-main)
 
 ## My process
 
