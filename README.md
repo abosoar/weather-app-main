@@ -85,7 +85,7 @@ Used GitHub Copilot for code complitions and guidence through the project.
 ## Author
 
 
-- Frontend Mentor - [@yourusername](https://www.frontendmentor.io/profile/yourusername)
+- Frontend Mentor - [@abosoar](https://www.frontendmentor.io/profile/abosoar)
 
 
 
